@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn hãy chọn thể loại bài đăng"
+        android:textSize="23dp"
+        android:textColor="#3385ff"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loại bài đăng"
+        android:textSize="18sp"
+        android:textColor="#262626"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp">
+        <RadioButton
+            android:id="@+id/radio_btn_post_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bài giới thiệu/đánh giá"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/radio_btn_post_type_sharing_experiences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bài chia sẻ kinh nghiệm"/>
+        <RadioButton
+            android:id="@+id/radio_btn_post_type_advertisement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bài quảng cáo"
+            android:enabled="true"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_to_post_up_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Tiếp"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:background="@drawable/custom_bottom_register_no_background"
+        android:textColor="#0099ff"
+        android:padding="12dp"
+        />
+
+</LinearLayout>

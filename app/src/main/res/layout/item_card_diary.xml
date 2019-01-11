@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn đã "
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/item_diary_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thích bài viết của "
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/item_diary_name_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tôi là ai"
+                android:textSize="18dp"
+                android:textColor="#00b300"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_diary_time_like"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 day ago"/>
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/item_diary_list_img"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>-->
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

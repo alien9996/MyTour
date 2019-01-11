@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_add_decription_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#00000000"
+        android:text="Thêm mô tả cho ảnh này"
+        android:textAllCaps="false"
+        android:textColor="#262626"
+        android:gravity="left|center"
+        />
+    <Button
+        android:id="@+id/btn_change_image_post_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#00000000"
+        android:text="Thay đổi ảnh"
+        android:textAllCaps="false"
+        android:textColor="#262626"
+        android:gravity="left|center"
+        />
+    <Button
+        android:id="@+id/btn_delete_image_post_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#00000000"
+        android:text="Xoá ảnh"
+        android:textAllCaps="false"
+        android:textColor="#262626"
+        android:gravity="left|center"
+        />
+    <Button
+        android:id="@+id/btn_cancel_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#00000000"
+        android:text="Hủy"
+        android:textAllCaps="false"
+        android:textColor="#262626"
+        android:gravity="left|center"
+        />
+
+
+</LinearLayout>

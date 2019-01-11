@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".uis.activity.PersonalPostActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/personal_post_relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/personal_img_user2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    app:civ_border_color="#FFF"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/personal_txt_name_user2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/personal_img_user2"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/personal_txt_status_user2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/personal_txt_name_user2" />
+
+                <TextView
+                    android:id="@+id/personal_txt_note_friend2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/personal_txt_status_user2"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/personal_btn_menu_item_personal_post2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/menu_icon"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/personal_txt_time_item_post_personal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/personal_txt_name_user2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/personal_img_user2" />
+
+                <TextView
+                    android:id="@+id/personal_txt_location_personal_post2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/personal_txt_name_user2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/personal_txt_time_item_post_personal2"
+                    android:drawableLeft="@drawable/ic_location_on_4f4f4f_24dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/personal_txt_content_item_personal_post2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000" />
+
+
+            <RelativeLayout
+                android:id="@+id/personal_post_img_relative"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#c9c9c9"
+                android:fillViewport="true"
+                android:scrollbars="horizontal">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/personal_post_img_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+
+
+                <TextView
+                    android:id="@+id/personal_post_img_postision"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:alpha="0.4"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="1/1"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#d9d9d9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp">
+
+                    <CheckBox
+                        android:id="@+id/personal_post_cb_like_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:button="@drawable/checkbox_change_bg" />
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/personal_btn_comment_item_personal_post"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/comment_icon"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:id="@+id/personal_txt_count_like_item_personal_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/personal_txt_count_comment_item_personal_post"
+                        android:paddingRight="5dp"
+                        android:text="0 lượt thích va" />
+
+                    <TextView
+                        android:id="@+id/personal_txt_count_comment_item_personal_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5dp"
+                        android:text="0 bình luận" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#d9d9d9" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/personal_post_comment_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="false">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/see_new_comment"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_expand_more_black_24dp"
+                android:text="Xem bình luận sau"
+                android:textColor="#3169d6" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/personal_post_addcmmm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/personal_post_comment_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#fff"
+            android:visibility="gone"
+            android:text="Bình luận bài viết."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#d9d9d9" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/personal_post_img_comment_ava"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="8">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/personal_post_edt_comment_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_button_circle1"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:hint="Bạn muốn bình luận gì?"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="8dp"
+                        android:textAllCaps="false"
+                        android:textSize="14dp" />
+
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/personal_post_btn_comment_clear_text"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/deletetext"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/personal_post_btn_send_comment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/send" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

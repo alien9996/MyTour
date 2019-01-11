@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ImageView
+            android:id="@+id/img_item_post"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:id="@+id/txt_title_post_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đà Nẵng: Cùng chải nghiệm du lịch Đà Nẵng với samsung note 8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#262626"/>
+        <TextView
+            android:id="@+id/txt_quote_content_post_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quote_conten_post_item"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avt_user_post"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+                android:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/txt_name_user_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_avt_user_post"
+                android:text="Hoàng Dược Sư"
+                android:textColor="#262626"
+                android:layout_marginTop="7dp"/>
+
+            <TextView
+                android:id="@+id/txt_time_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="10:40 AM - 22/6 "
+                android:textSize="11dp"
+                android:layout_toRightOf="@+id/txt_name_user_post"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/txt_count_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 3.120 lượt xem"
+                android:textSize="11dp"
+                android:layout_toRightOf="@+id/txt_time_post"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#d9d9d9"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom"
+        />
+</android.support.v7.widget.CardView>

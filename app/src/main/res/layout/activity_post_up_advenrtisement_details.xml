@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Thêm chi tiết bài quảng cáo"
+            android:textAllCaps="true"
+            android:textColor="#262626"
+            android:textSize="23dp" />
+
+        <TextView
+            style="@style/post_up_details_advertisement_text"
+            android:layout_marginTop="20dp"
+            android:text="Thời gian" />
+
+        <EditText
+            android:id="@+id/edt_time_service_post_up"
+            style="@style/post_up_details_advertisement_edit_text"
+            android:hint="Thời gian của tour"
+            android:imeOptions="actionNext" />
+
+        <TextView
+            style="@style/post_up_details_advertisement_text"
+            android:text="Thời gian khởi hành" />
+
+        <EditText
+            android:id="@+id/edt_time_service_start_post_up"
+            style="@style/post_up_details_advertisement_edit_text"
+            android:hint="Thời gian xuất phát"
+            android:imeOptions="actionNext" />
+
+        <TextView
+            style="@style/post_up_details_advertisement_text"
+            android:text="Phương tiện" />
+
+        <EditText
+            android:id="@+id/edt_transport_service_post_up"
+            style="@style/post_up_details_advertisement_edit_text"
+            android:hint="Phương tiện di chuyển"
+            android:imeOptions="actionNext" />
+
+        <TextView
+            style="@style/post_up_details_advertisement_text"
+            android:text="Giá cũ" />
+
+        <EditText
+            android:id="@+id/edt_price_old_post_up"
+            style="@style/post_up_details_advertisement_edit_text"
+            android:hint="Giá cũ của tour"
+            android:imeOptions="actionNext" />
+
+        <TextView
+            style="@style/post_up_details_advertisement_text"
+            android:text="Giá Mới" />
+
+        <EditText
+            android:id="@+id/edt_price_new_post_up"
+            style="@style/post_up_details_advertisement_edit_text"
+            android:hint="Giá mới của tour"
+            android:imeOptions="actionNext" />
+
+        <TextView
+            style="@style/post_up_details_advertisement_text"
+            android:text="Tiêu đề quảng cáo" />
+
+        <EditText
+            android:id="@+id/edt_title_advertisement_post_up"
+            style="@style/post_up_details_advertisement_edit_text"
+            android:hint="Tiêu đề quảng cáo"
+            android:imeOptions="actionDone" />
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_bottom_register_no_background"
+            android:padding="12dp"
+            android:text="Xong"
+            android:textAllCaps="false"
+            android:textColor="#0099ff"
+            android:textSize="16dp" />
+    </LinearLayout>
+</ScrollView>

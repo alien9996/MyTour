@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/list_friend_ava"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+        <ProgressBar
+            android:layout_margin="15dp"
+            android:id="@+id/list_friend_processbar"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/list_friend_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/list_friend_ava"
+            android:layout_marginTop="5dp"
+            android:text="Nguyen Quoc Chinh"
+            style="@style/personal_page_info_values"
+            android:gravity="left"/>
+
+        <TextView
+            android:id="@+id/list_friend_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/list_friend_ava"
+            android:layout_below="@+id/list_friend_name"
+            android:layout_marginLeft="5dp"
+            android:text="đã làm bạn 3 năm"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

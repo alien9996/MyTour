@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_content_post_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="15"
+        android:text="@string/content_post"
+        android:textColor="#262626" />
+
+
+    <ImageView
+        android:id="@+id/img_post_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/hinh_b" />
+
+
+    <TextView
+        android:id="@+id/txt_description_post_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ảnh sông Hàn, Đà Lạt về đêm"
+        android:textStyle="italic" />
+
+</LinearLayout>
+

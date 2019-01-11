@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <ProgressBar
+                android:id="@+id/account_progressbar"
+                android:visibility="gone"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avt_user_library"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_friend_black_24dp" />
+
+            <TextView
+                android:id="@+id/txt_name_user"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_avt_user_library"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"
+                android:text="User"
+                android:textColor="#000"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/img_avt_user_library">
+
+                <LinearLayout
+                    android:id="@+id/frg_library_not_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Ban chưa đăng nhập"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/btn_frg_library_not_login_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button"
+                        android:text="Đăng nhập"
+                        android:textAllCaps="false"
+                        android:textColor="#4f4f4f"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/frg_library_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/linear_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/user_count_follower"
+                            style="@style/personal_page_info_values"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/user_count_pictures"
+                            style="@style/personal_page_info_values"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/user_count_posts"
+                            style="@style/personal_page_info_values"
+                            android:text="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear_value"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/personal_page_title"
+                            android:text="followers" />
+
+                        <TextView
+                            style="@style/personal_page_title"
+                            android:text="pictures" />
+
+                        <TextView
+                            style="@style/personal_page_title"
+                            android:text="posts" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/linear_title"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_info_detail_user_libary"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_button"
+                            android:text="Xem chi tiết"
+                            android:textAllCaps="false"
+                            android:textColor="#4f4f4f"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/txt_name_user"
+                android:layout_marginTop="5dp"
+                android:background="#4f4f4f" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_group_black_24dp"
+            android:paddingLeft="10dp"
+            android:text="   Nhóm (9 nhóm đang hoạt động)"
+            android:textAlignment="textStart"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_list_friend_and_invitation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_friend_black_24dp"
+            android:paddingLeft="10dp"
+            android:text="   Bạn bè (199 bạn và 5 lời mời)"
+            android:textAlignment="textStart"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_history_black_24dp"
+            android:paddingLeft="10dp"
+            android:text="   Lịch sử/Sự kiện"
+            android:textAlignment="textStart"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_contact_mail_black_24dp"
+            android:paddingLeft="10dp"
+            android:text="   Trợ giúp/Hỗ trợ"
+            android:textAlignment="textStart"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_name_user"
+            android:layout_marginTop="5dp"
+            android:background="#4f4f4f" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_settings_black_24dp"
+            android:paddingLeft="10dp"
+            android:text="   Cài đặt"
+            android:textAlignment="textStart"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_login_gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/facebook_iocn"
+            android:paddingLeft="10dp"
+            android:text="  Đăng nhập bằng tài khoản Facebook"
+            android:textAlignment="textStart"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_person_add_black_24dp"
+            android:paddingLeft="10dp"
+            android:text="   Tạo một tài khoản mới"
+            android:textAlignment="textStart"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/account_circle_login_24dp"
+            android:paddingLeft="10dp"
+            android:text="   Đăng nhập"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ic_power_settings_new_black_24dp"
+            android:paddingLeft="10dp"
+            android:text="   Đăng xuất"
+            android:textAlignment="textStart"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

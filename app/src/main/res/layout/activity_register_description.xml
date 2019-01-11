@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MÔ TẢ THÊM"
+        android:textSize="23dp"
+        android:textColor="#0099ff"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm mô tả bản thân"
+        android:textSize="18sp"
+        android:textColor="#0099ff"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+
+        />
+    <EditText
+        android:id="@+id/edt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="16sp"
+        android:hint="Thêm mô tả"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:background="@drawable/custom_edit_tex"
+        android:maxLines="4"
+        android:lines="4"
+        android:inputType="textMultiLine"
+        android:gravity="left"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cấp độ người dùng"
+        android:textSize="18sp"
+        android:textColor="#0099ff"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+        <RadioButton
+            android:id="@+id/radio_btn_user_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Người dùng bình thường"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/radio_btn_user_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thành viên"/>
+        <RadioButton
+            android:id="@+id/radio_btn_user_enterprise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doanh nghiệp hoặc công ty du lịch"
+            android:enabled="true"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Hoàn thành"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:background="@drawable/custom_bottom_register_no_background"
+        android:textColor="#0099ff"
+        android:padding="12dp"
+        />
+</LinearLayout>

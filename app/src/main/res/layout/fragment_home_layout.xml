@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/linear_content_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Tour đang hot"
+                android:textAllCaps="true"
+                android:textColor="#303030"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="#d9d9d9" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_banner_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Phan list cac banner du lich-->
+            </android.support.v7.widget.RecyclerView>
+            <Button
+                android:id="@+id/btn_view_all_advertisement"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:text="Xem thêm" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#d9d9d9" />
+
+
+            <!--Phan chi tiet mot so bai viet tieu bieu-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="Diễn đàn"
+                android:textAllCaps="true"
+                android:textColor="#303030"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="#d9d9d9" />
+
+            <!--<android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_item_post_home_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_item_post_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Phan dang sach cac bai viet tieu bieu duoc dua len-->
+            </android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn_view_all_post"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:text="Xem thêm" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#d9d9d9" />
+            <!--Phan goi y cac dia diem tieu bieu-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="Địa Điểm"
+                android:textAllCaps="true"
+                android:textColor="#303030"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="#d9d9d9" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgHue"
+                            android:layout_width="120dp"
+                            android:layout_height="75dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/hue_logo"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Huế"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:id="@+id/imgNhaTrang"
+                            android:layout_width="120dp"
+                            android:layout_height="75dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/nha_trang_dem"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nha Trang"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgCatBa"
+                            android:layout_width="120dp"
+                            android:layout_height="75dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/cat_ba_dem"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cát Bà"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgHaLong"
+                            android:layout_width="120dp"
+                            android:layout_height="75dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ha_long"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hạ Long"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgDaLat"
+                            android:layout_width="120dp"
+                            android:layout_height="75dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/da_lat"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Đà Lạt"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgVungTau"
+                            android:layout_width="120dp"
+                            android:layout_height="75dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/vung_tau"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vũng Tàu"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgDaNang"
+                            android:layout_width="120dp"
+                            android:layout_height="75dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/da_nang"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Đà Nẵng"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgHaNoi"
+                            android:layout_width="120dp"
+                            android:layout_height="75dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ha_noi"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hà Nội"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="#00000000"
+                        android:text="Xem thêm..."
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#d9d9d9" />
+
+            <!--Phan mang xa hoi cong dong -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="Cộng Đồng"
+                android:textAllCaps="true"
+                android:textColor="#303030"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d9d9d9" />
+
+            <LinearLayout
+                android:id="@+id/frg_listpost_addpost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_user_avatar_home_page"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_up_post_home_page"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="8"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_button_circel_no_border"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="8dp"
+                    android:textSize="14dp"
+                    android:text="Bạn muốn chia sẻ điều gì?"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_camera_home_page"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_camera_alt_black_24dp"
+                    android:paddingLeft="7dp"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#d9d9d9" />
+
+            <android.support.v7.widget.RecyclerView
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/recycler_item_personal_post_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Phan danh sach cac bai viet cac binh luan mang xa hoi-->
+            </android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn_view_list_posts"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button"
+                android:text="Xem thêm" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

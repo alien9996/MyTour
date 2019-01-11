@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Địa điểm"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp">
+
+            <ToggleButton
+                android:id="@+id/tgb1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Nội địa"
+                android:textOn="Nội địa"
+                android:textSize="10dp"
+                />
+
+            <ToggleButton
+                android:id="@+id/tgb2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                android:textOff="Nước ngoài"
+                android:textOn="Nước ngoài"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <ToggleButton
+                android:id="@+id/tgb3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Miền Bắc"
+                android:textOn="Miền Bắc"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Miền Trung"
+                android:textOn="Miền Trung"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                android:textOff="Miền Nam"
+                android:textOn="Miền Nam"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdddd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Mùa"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <ToggleButton
+                android:id="@+id/tgb6"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Xuân"
+                android:textOn="Xuân"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Hạ"
+                android:textOn="Hạ"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb8"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Thu"
+                android:textOn="Thu"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb9"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                android:textOff="Đông"
+                android:textOn="Đông"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdddd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Hình thức du lịch"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp">
+
+            <ToggleButton
+                android:id="@+id/tgb10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Nghỉ dưỡng"
+                android:textOn="Nghỉ dưỡng"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Khám phá"
+                android:textOn="Khám phá"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                android:textOff="Mạo hiểm"
+                android:textOn="Mạo hiểm"
+                android:textSize="10dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <ToggleButton
+                android:id="@+id/tgb13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Cộng đồng"
+                android:textOn="Cộng đồng"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Tâm linh"
+                android:textOn="Tâm linh"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb15"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Chữa bệnh"
+                android:textOn="Chữa bệnh"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdddd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Số lượng thành viên"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/tgb16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Dưới 4 người"
+                android:textOn="Dưới 4 người"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb17"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                android:textOff="Từ 5 - 10 người"
+                android:textOn="Từ 5 - 10 người"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <ToggleButton
+                android:id="@+id/tgb18"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/custom_button"
+                android:textOff="Từ 10 - 20 người"
+                android:textOn="Từ 10 - 20 người"
+                android:textSize="10dp" />
+
+            <ToggleButton
+                android:id="@+id/tgb19"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                android:textOff="Trên 20 người"
+                android:textOn="Trên 20 người"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdddd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Giá"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/tvMin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Tối thiểu"
+                android:paddingLeft="10dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:text="----"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/tvMax"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Tối đa"
+                android:paddingLeft="10dp"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdddd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Đánh giá"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <RatingBar
+                android:id="@+id/rtbar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:progressTint="@android:color/holo_orange_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Trở lên"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btreset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0080ff"
+                android:text="Khởi động lại"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btComplete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ff8d01"
+                android:text="Hoàn thành"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

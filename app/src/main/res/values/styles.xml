@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">#FFF</item>
+    </style>
+
+    <style name="toolbar_home_style">
+        <item name="android:textColorSecondary">#262626</item> <!--mau cua chu va icon tren thanh toolbar-->
+    </style>
+
+    <!--style back ground trang ca nhan-->
+
+    <!--style text view gia tri cua cac tham so post, followers-->
+    <style name="personal_page_title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--style cho tieu de cua cac tham so post,...-->
+    <style name="personal_page_info_values">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--button page-->
+    <style name="personal_page_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#e6e6e6</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!-- ket thuc style cho trang ca nhan-->
+
+    <!--style cho phan mo ta ben trang activity_post_up_details-->
+
+    <style name="post_up_details_description">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">#262626</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <!--ket thuc style cho phan mo ta ben trang activity_post_up_details-->
+
+    <!--style cho phan chi tiet cho activity phan quang cao -->
+    <!--style cho edit text-->
+    <style name="post_up_details_advertisement_edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableRight">@drawable/ic_close_black_24dp</item>
+        <item name="android:background">@drawable/custom_edit_tex</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#2831d6</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--style cho phan text view -->
+    <style name="post_up_details_advertisement_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#3385ff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--ket thuc style cho phan chi tiet cho activity phan quang cao -->
+</resources>

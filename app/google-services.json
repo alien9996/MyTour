@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "879112662507",
+    "firebase_url": "https://mytour-5a2aa.firebaseio.com",
+    "project_id": "mytour-5a2aa",
+    "storage_bucket": "mytour-5a2aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879112662507:android:b3d0335a923c8e6e",
+        "android_client_info": {
+          "package_name": "com.example.dell.mytour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879112662507-qaid5qlg80flvnbjackuk5jfu7o6mj0u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.mytour",
+            "certificate_hash": "b61125670a1da5f29c9cda85be89c27dde6fb5fa"
+          }
+        },
+        {
+          "client_id": "879112662507-8u5reagvdvepftcfspl5j05p3h3g5mco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDferFEQy8QcUWJWJePyCtiGy4mbslo4vw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879112662507-8u5reagvdvepftcfspl5j05p3h3g5mco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

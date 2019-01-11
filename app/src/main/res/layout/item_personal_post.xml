@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--Phan cho vao trong list view-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/personal_img_user"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:civ_border_color="#FFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/personal_txt_name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/personal_img_user"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/personal_txt_status_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/personal_txt_name_user"
+                />
+
+            <TextView
+                android:id="@+id/personal_txt_note_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/personal_txt_status_user"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/personal_btn_menu_item_personal_post"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/menu_icon"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:id="@+id/personal_txt_time_item_post_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_txt_name_user"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/personal_img_user" />
+
+            <TextView
+                android:id="@+id/personal_txt_location_personal_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_txt_name_user"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/personal_txt_time_item_post_personal"
+                android:drawableLeft="@drawable/ic_location_on_4f4f4f_24dp"
+                 />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/personal_txt_content_item_personal_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000" />
+
+
+        <RelativeLayout
+            android:id="@+id/item_personal_post_img_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c9c9c9"
+            android:fillViewport="true"
+            android:scrollbars="horizontal">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/item_personal_post_img_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="visible">
+
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:id="@+id/item_personal_post_img_postision"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:alpha="0.4"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="1/1"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#d9d9d9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp">
+
+                <CheckBox
+                    android:id="@+id/personal_cb_unlike_item_personal_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:button="@drawable/checkbox_change_bg"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/personal_btn_comment_item_personal_post"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/comment_icon"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/personal_txt_count_like_item_personal_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/personal_txt_count_comment_item_personal_post"
+                    android:paddingRight="5dp"
+                    android:text="0 lượt thích và" />
+
+                <TextView
+                    android:id="@+id/personal_txt_count_comment_item_personal_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="5dp"
+                    android:text="0 bình luận" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#d9d9d9" />
+
+
+        <RelativeLayout
+            android:id="@+id/personal_relative_firstcmm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/personal_img_friend"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/personal_txt_name_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/personal_img_friend"
+                android:text="Who I Am"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/personal_txt_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/personal_txt_name_friend"
+                android:text="Chuyến đi tuyệt vời!!!!!!"
+                android:textColor="#4d4d4d" />
+
+            <TextView
+                android:id="@+id/personal_txt_time_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_txt_name_friend"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/personal_img_friend"
+                android:text="01/01/2018 - 6:00 pm"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#d9d9d9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/personal_img_comment_ava"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="8">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/personal_edt_comment_text"
+                        android:layout_width="match_parent"
+                        android:minHeight="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_button_circle1"
+                        android:gravity="left"
+                        android:hint="Bạn muốn bình luận gì?"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:textAllCaps="false"
+                        android:focusableInTouchMode="false"
+                        android:textSize="14dp" />
+
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/personal_btn_comment_clear_text"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/deletetext"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/personal_btn_send_comment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/send" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/item_personal_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:visibility="gone"
+            android:textSize="18dp"
+            android:text="Bạn hãy đăng nhập để trải nghiệm tính năng!!!!"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#d9d9d9" />
+
+
+    </LinearLayout>
+    <!--Phan cho vao trong list view-->
+</android.support.v7.widget.CardView>

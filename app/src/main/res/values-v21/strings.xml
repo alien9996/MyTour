@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyTour</string>
+    <string name="quote_conten_post_item">Hồi tháng 4 NASA và cơ quan hàng không vũ trụ châu Âu (ESA)
+        tuyên bố cùng nhau hợp tác tìm cách đưa mẫu vật trên sao Hỏa về Trái Đất nghiên cứu.
+        Bây giờ họ chọn Airbus để giao cho hợp đồng thiết kế ra...</string>
+    <string name="quote_conten_post_item_home">Hồi tháng 4 NASA và cơ quan hàng không vũ trụ châu Âu (ESA)
+        tuyên bố cùng nhau hợp tác tìm cách....</string>
+    <string name="content_post">
+        NASA cho biết cặp vệ tinh mới được phóng lên quỹ đạo vào tháng Năm đã kích hoạt hệ thống laser tìm kiếm lẫn nhau,
+        sẵn sàng cho nhiệm vụ theo dõi các tảng băng, khí quyển, đại dương của hành tinh chúng ta.
+
+        Đây cũng là một phần nằm trong chương trình Gravity Recovery và Climate Experiment (GRACE-FO), kết
+        quả của dự án hợp tác giữa cơ quan Hàng không Vũ trụ Mỹ (NASA) và Trung tâm nghiên cứu Khoa học Địa chất (GFZ) của Đức.
+        Thông qua phương thức trên, hai vệ tinh vẫn giữ được kết nối trong khi bay cùng nhau quanh Trái Đất, theo dõi khoảng cách
+        giữa chúng thay đổi thế nào dưới tác động của trường lực hấp dẫn. Những dữ liệu thu thập được sẽ giúp các nhà khoa học
+        nghiên cứu, theo dõi và hiểu rõ hơn về độ mỏng của các tầng băng, mực nước biển dâng cao và thậm chí
+        cả dòng chảy của magma dưới lòng đất.
+
+        Các vệ tinh thuộc thế hệ GRACE trước đây cũng sử dụng kỹ thuật tương tự nhưng sử dụng sóng vi ba.
+        Trong khi đó ở thế hệ GRACE-FO mới, NASA trang bị cả hệ thống dùng sóng vi ba lẫn giao thoa kế laser
+        (LRI - Laser Ranging Interferometer) nhằm cải thiện độ chính xác của các phép đo.
+        Theo Kirk McKenzie, đại diện NASA cho biết LRI là bước đột phá về phép đo khoảng cách chính xác trong không gian.
+        Không đơn giản là thiết bị đo giao thoa bằng laser đầu tiên được tích hợp trong vệ tinh và tàu vũ trụ,
+        LRI còn là thành quả đỉnh cao của hơn 10 năm đầu tư hợp tác nghiên cứu và phát triển giữa NASA với Đức.
+
+        Công nghệ này càng ấn tượng hơn khi trên thực tế, tia laser phát ra từ vệ tinh này chỉ hướng vào một lỗ trống
+        kích cỡ chỉ bằng đồng xu trên vệ tinh kia ở khoảng cách 220 km, tốc độ bay theo quỹ đạo quanh Trái Đất khoảng 25.749 km/h.
+        Theo NASA, lần thử nghiệm đầu tiên trên đã chứng minh các thiết bị LRI hoạt động tốt như mong đợi. Chúng đã kết nối với
+        nhau và thậm chí có thể truyền các dữ liệu khoảng cách đầu tiên về cho nhóm nghiên cứu dưới mặt đất.
+        Tuy nhiên, các nhà khoa học sẽ cần thêm thời gian để tinh chỉnh thiết bị laser,
+        đảm bảo lượng dữ liệu truyền về đầy đủ và chính xác.
+    </string>
+    <string name="name_note_register">Chúng tôi khuyến nghị bạn nên
+        dùng tên thật để trải nghiệm ứng dụng và tìm kiếm bạn bè một cách tốt nhất.</string>
+    <string name="phone_address_note_register">Chúng tôi khuyến nghị bạn nên
+        dùng số điện thoại và địa chỉ thật để chúng tôi hỗ trợ bạn 1 cách tốt nhất.</string>
+</resources>
